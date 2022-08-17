@@ -9,8 +9,10 @@
         "lint": "vue-cli-service lint"
     },
     "dependencies": {
+        "@gs-ui/gs-ui": "^2.11.11",
         "@lljj/polyfill": "^0.1.0",
         "@lljj/vue-json-schema-form": "1.14.0",
+        "@lljj/vue2-form-gsui": "1.14.0",
         "@lljj/vue2-form-iview3": "1.14.0",
         "ajv-i18n": "^3.5.0",
         "demo-common": "1.12.0",
