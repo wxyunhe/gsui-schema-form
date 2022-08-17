@@ -24,5 +24,5 @@ module.exports = {
             discardUnused: false,
             zindex: false,
         }),
-    ]
+    ],
 };

@@ -25,6 +25,8 @@
 </template>
 
 <script>
+import loader from '@monaco-editor/loader';
+
 export default {
     name: 'CodeEditor',
     props: {
@@ -134,7 +136,8 @@ export default {
             });
         },
         init() {
-            window.require(['vs/editor/editor.main'], () => {
+
+            loader.init().then((_monaco) => {
                 const {
                     value, language, theme, height, options, width
                 } = this.$props;

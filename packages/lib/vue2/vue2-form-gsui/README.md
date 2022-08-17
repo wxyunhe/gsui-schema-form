@@ -1,17 +1,17 @@
-# @lljj/vue2-form-iview3
+# @lljj/vue-json-schema-form
 
-基于 [iview3](http://iview.talkingdata.com) 、Vue2、 [JSON Schema](https://json-schema.org/understanding-json-schema/index.html) 生成表单
+基于 [Element Ui](https://element.eleme.io/) 、Vue2、 [JSON Schema](https://json-schema.org/understanding-json-schema/index.html) 生成表单
 
-> 通过 [@lljj/vue2-form-core](https://github.com/lljj-x/vue-json-schema-form/tree/master/packages/lib/vue2/vue2-core) 适配 iview3 库
+> 通过 [@lljj/vue2-form-core](https://github.com/lljj-x/vue-json-schema-form/tree/master/packages/lib/vue2/vue2-core) 适配 ElementUi 库
 
 ## 安装
 
 ```ssh
 ## npm
-npm install --save @lljj/vue2-form-iview3
+npm install --save @lljj/vue-json-schema-form
 
 ## yarn
-yarn add @lljj/vue2-form-iview3
+yarn add @lljj/vue-json-schema-form
 ```
 
 ## 使用
@@ -25,7 +25,7 @@ yarn add @lljj/vue2-form-iview3
 
 ```js
 //  使用
-import VueForm from '@lljj/vue2-form-iview3';
+import VueForm from '@lljj/vue-json-schema-form';
 
 export default {
     name: 'Demo',

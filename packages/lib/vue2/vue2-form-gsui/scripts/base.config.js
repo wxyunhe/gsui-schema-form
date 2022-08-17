@@ -88,7 +88,7 @@ module.exports = ({
                 extensions: ['.js', '.vue'],
             }),
             postcss({
-                extract: config.extractcss
+                extract: config.extractcss,
             }),
             commonjs({
                 include: /node_modules/,

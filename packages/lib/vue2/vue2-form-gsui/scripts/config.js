@@ -14,15 +14,17 @@ const banner = `/** @license ${packageData.name} (c) 2020-${new Date().getFullYe
 module.exports = {
     entry: resolve('src/index.js'),
     banner,
-    external: ['vue'],
+    external: ['vue', 'vue-color', 'monaco-editor'],
     globals: {
-        vue: 'Vue'
+        vue: 'Vue',
+        'vue-color': 'VueColor',
+        'monaco-editor': 'monaco'
     },
     extractcss: false,
     output: {
         path: resolve('dist/'),
         file: 'vue2-form-gsui', // 导出文件名，自动拼接 format
-        name: 'vue2FormGsUi', // umd 注册的全局变量名称
+        name: 'vue2FormGsui', // umd 注册的全局变量名称
         format: ['esm', 'umd']
     }
 };

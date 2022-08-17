@@ -59,6 +59,7 @@ module.exports = {
             vue: 'Vue',
             ELEMENT: 'ELEMENT',
             VueRouter: 'VueRouter',
+            'monaco-editor': 'monaco'
         };
         config.resolve.alias = {
             ...config.resolve.alias,
@@ -71,6 +72,7 @@ module.exports = {
     // webpack 链接 API，用于生成和修改 webpack 配置
     // https://github.com/mozilla-neutrino/webpack-chain
     chainWebpack: (config) => {
+
         // 添加runtime
         config.optimization.runtimeChunk({
             name: 'user-runtime'
@@ -125,7 +127,7 @@ module.exports = {
     css: {
         requireModuleExtension: true,
         sourceMap: !isProduction,
-        extract: isProduction
+        extract: isProduction,
     },
 
     // All options for webpack-dev-server are supported

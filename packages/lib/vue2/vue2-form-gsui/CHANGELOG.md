@@ -5,7 +5,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [1.14.0](https://github.com/lljj-x/vue-json-schema-form/compare/v1.13.1...v1.14.0) (2022-08-07)
 
-**Note:** Version bump only for package @lljj/vue2-form-iview3
+**Note:** Version bump only for package @lljj/vue-json-schema-form
 
 
 
@@ -24,7 +24,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ## [1.12.2](https://github.com/lljj-x/vue-json-schema-form/compare/v1.12.1...v1.12.2) (2022-04-11)
 
-**Note:** Version bump only for package @lljj/vue2-form-iview3
+**Note:** Version bump only for package @lljj/vue-json-schema-form
 
 
 
@@ -32,7 +32,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ## [1.12.1](https://github.com/lljj-x/vue-json-schema-form/compare/v1.12.0...v1.12.1) (2022-04-05)
 
-**Note:** Version bump only for package @lljj/vue2-form-iview3
+**Note:** Version bump only for package @lljj/vue-json-schema-form
 
 
 
@@ -40,7 +40,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [1.12.0](https://github.com/lljj-x/vue-json-schema-form/compare/v1.11.0...v1.12.0) (2022-03-08)
 
-**Note:** Version bump only for package @lljj/vue2-form-iview3
+**Note:** Version bump only for package @lljj/vue-json-schema-form
 
 
 
@@ -48,7 +48,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [1.11.0](https://github.com/lljj-x/vue-json-schema-form/compare/v1.10.0...v1.11.0) (2022-02-19)
 
-**Note:** Version bump only for package @lljj/vue2-form-iview3
+**Note:** Version bump only for package @lljj/vue-json-schema-form
 
 
 
@@ -67,7 +67,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ## [1.9.5](https://github.com/lljj-x/vue-json-schema-form/compare/v1.9.4...v1.9.5) (2021-11-21)
 
-**Note:** Version bump only for package @lljj/vue2-form-iview3
+**Note:** Version bump only for package @lljj/vue-json-schema-form
 
 
 
@@ -75,7 +75,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ## [1.9.4](https://github.com/lljj-x/vue-json-schema-form/compare/v1.9.3...v1.9.4) (2021-11-02)
 
-**Note:** Version bump only for package @lljj/vue2-form-iview3
+**Note:** Version bump only for package @lljj/vue-json-schema-form
 
 
 
@@ -94,7 +94,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ## [1.9.2](https://github.com/lljj-x/vue-json-schema-form/compare/v1.9.1...v1.9.2) (2021-09-25)
 
-**Note:** Version bump only for package @lljj/vue2-form-iview3
+**Note:** Version bump only for package @lljj/vue-json-schema-form
 
 
 
@@ -102,7 +102,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ## [1.9.1](https://github.com/lljj-x/vue-json-schema-form/compare/v1.9.0...v1.9.1) (2021-09-22)
 
-**Note:** Version bump only for package @lljj/vue2-form-iview3
+**Note:** Version bump only for package @lljj/vue-json-schema-form
 
 
 
@@ -110,7 +110,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [1.9.0](https://github.com/lljj-x/vue-json-schema-form/compare/v1.7.0...v1.9.0) (2021-09-06)
 
-**Note:** Version bump only for package @lljj/vue2-form-iview3
+**Note:** Version bump only for package @lljj/vue-json-schema-form
 
 
 
@@ -118,7 +118,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [1.8.0](https://github.com/lljj-x/vue-json-schema-form/compare/v1.7.0...v1.8.0) (2021-09-06)
 
-**Note:** Version bump only for package @lljj/vue2-form-iview3
+**Note:** Version bump only for package @lljj/vue-json-schema-form
 
 
 
@@ -137,7 +137,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ## [1.6.3](https://github.com/lljj-x/vue-json-schema-form/compare/v1.6.2...v1.6.3) (2021-07-12)
 
-**Note:** Version bump only for package @lljj/vue2-form-iview3
+**Note:** Version bump only for package @lljj/vue-json-schema-form
 
 
 
@@ -145,7 +145,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ## [1.6.2](https://github.com/lljj-x/vue-json-schema-form/compare/v1.6.1...v1.6.2) (2021-05-31)
 
-**Note:** Version bump only for package @lljj/vue2-form-iview3
+**Note:** Version bump only for package @lljj/vue-json-schema-form
 
 
 
@@ -230,7 +230,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ## [1.1.3](https://github.com/lljj-x/vue-json-schema-form/compare/v1.1.2...v1.1.3) (2021-03-18)
 
-**Note:** Version bump only for package @lljj/vue2-form-iview3
+**Note:** Version bump only for package @lljj/vue-json-schema-form
 
 
 
@@ -242,17 +242,6 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 ### Bug Fixes
 
 * **vue3-antd:** 修复form label 双冒号问题 ([5b4f16c](https://github.com/lljj-x/vue-json-schema-form/commit/5b4f16c3c1a4f4b784c2fd5c1fbe7eec40cf8d7b)), closes [#46](https://github.com/lljj-x/vue-json-schema-form/issues/46)
-
-
-
-
-
-## [1.1.1](https://github.com/lljj-x/vue-json-schema-form/compare/v1.1.0...v1.1.1) (2021-03-06)
-
-
-### Bug Fixes
-
-* **vue2-iview3:** 修复iveiws组件透透传slot失效 ([f86ec5f](https://github.com/lljj-x/vue-json-schema-form/commit/f86ec5f77f98a40ee31989cf6e554504059b910d))
 
 
 
@@ -280,9 +269,20 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
+## [1.0.1](https://github.com/lljj-x/vue-json-schema-form/compare/v1.0.0...v1.0.1) (2021-01-31)
+
+
+### Bug Fixes
+
+* **vue2-element:** 修复 vue2-elementUi package 配置问题 ([fcc30d6](https://github.com/lljj-x/vue-json-schema-form/commit/fcc30d6c1b1214b71784d50b14385a4444d4ff43))
+
+
+
+
+
 ## [0.6.1](https://github.com/lljj-x/vue-json-schema-form/compare/v0.6.0...v0.6.1) (2021-01-19)
 
-**Note:** Version bump only for package @lljj/vue2-form-iview3
+**Note:** Version bump only for package @lljj/vue-json-schema-form
 
 
 
@@ -299,6 +299,5 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Features
 
-* **vue2-iview3:** 完成iview3时间选择和样式优化 ([27e310e](https://github.com/lljj-x/vue-json-schema-form/commit/27e310e298498ee5a2466f4d6c7d4153ad8b9777))
 * 适配 iview3 ([d4ee166](https://github.com/lljj-x/vue-json-schema-form/commit/d4ee166a7dd71bb9a840525f4eb15c4fdc97f11d))
 * **vue2-iview3:** 适配 iview3 ([0120d2b](https://github.com/lljj-x/vue-json-schema-form/commit/0120d2b9a265cf0bffee099c2d4974c883c08a25)), closes [#27](https://github.com/lljj-x/vue-json-schema-form/issues/27)

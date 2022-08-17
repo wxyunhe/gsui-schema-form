@@ -14,7 +14,7 @@ const {
     DatePickerWidget,
     DateTimePickerWidget,
     InputWidget,
-    ColorWidget
+    ColorWidget,
 } = widgetComponents;
 
 export default {

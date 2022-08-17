@@ -7,5 +7,5 @@ module.exports = {
         require('postcss-cssnext')({
             warnForDuplicates: false,
         }),
-    ]
+    ],
 };
