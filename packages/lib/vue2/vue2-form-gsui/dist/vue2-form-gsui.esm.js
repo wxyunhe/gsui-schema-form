@@ -18981,10 +18981,10 @@ styleInject(css_248z$1);
 var globalOptions = Object.freeze({
   WIDGET_MAP: Object.freeze(WIDGET_MAP),
   COMPONENT_MAP: Object.freeze({
-    form: 'el-form',
-    formItem: 'el-form-item',
-    button: 'el-button',
-    popover: 'el-popover'
+    form: 'gs-form',
+    formItem: 'gs-form-item',
+    button: 'gs-button',
+    popover: 'gs-popover'
   }),
   HELPERS: {
     // 是否mini显示 description
