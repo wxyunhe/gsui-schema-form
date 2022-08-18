@@ -6,10 +6,11 @@
         "version": {
             "allowBranch": "master",
             "exact": true,
-            "ignoreChanges": [
-                "**/*.md"
-            ],
+            "ignoreChanges": ["**/*.md"],
             "message": "build: release version %v"
+        },
+        "publish": {
+            "registry": "http://registry.npm.gridsum.com"
         }
     }
 }

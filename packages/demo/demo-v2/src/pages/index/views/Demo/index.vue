@@ -213,7 +213,7 @@ const VueIview3Form = async () => {
 const VueGsUiForm = async () => {
     const [, gsuiForm] = await Promise.all([
         import('demo-common/components/GsUi/index.js'),
-        import('@lljj/vue2-form-gsui')
+        import('@cps/vue2-schema-form-gsui')
     ]);
 
     return gsuiForm;

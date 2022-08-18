@@ -1,34 +1,13 @@
-/** @license @lljj/vue2-form-gsui (c) 2020-2022 Liu.Jun License: Apache-2.0 */
+/** @license @cps/vue2-schema-form-gsui (c) 2020-2022 Liu.Jun License: Apache-2.0 */
 (function (global, factory) {
-  typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('vue'), require('monaco-editor'), require('vue-color')) :
-  typeof define === 'function' && define.amd ? define(['exports', 'vue', 'monaco-editor', 'vue-color'], factory) :
-  (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global.vue2FormGsui = {}, global.Vue, global.monaco, global.VueColor));
-}(this, (function (exports, Vue, monaco, VueColor) { 'use strict';
+  typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('vue'), require('vue-color')) :
+  typeof define === 'function' && define.amd ? define(['exports', 'vue', 'vue-color'], factory) :
+  (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global.vue2FormGsui = {}, global.Vue, global.VueColor));
+}(this, (function (exports, Vue, VueColor) { 'use strict';
 
   function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'default' in e ? e : { 'default': e }; }
 
-  function _interopNamespace(e) {
-    if (e && e.__esModule) return e;
-    var n = Object.create(null);
-    if (e) {
-      Object.keys(e).forEach(function (k) {
-        if (k !== 'default') {
-          var d = Object.getOwnPropertyDescriptor(e, k);
-          Object.defineProperty(n, k, d.get ? d : {
-            enumerable: true,
-            get: function () {
-              return e[k];
-            }
-          });
-        }
-      });
-    }
-    n['default'] = e;
-    return Object.freeze(n);
-  }
-
   var Vue__default = /*#__PURE__*/_interopDefaultLegacy(Vue);
-  var monaco__namespace = /*#__PURE__*/_interopNamespace(monaco);
   var VueColor__default = /*#__PURE__*/_interopDefaultLegacy(VueColor);
 
   function _typeof(obj) {
@@ -18676,125 +18655,23 @@
   };
 
   //
-  loader.config({
-    monaco: monaco__namespace
-  });
   var script$4 = {
     name: 'CodeEditorWidget',
     components: {},
     data: function data() {
       return {
-        test: null
+        test: null,
+        editor: null
       };
     },
     mounted: function mounted() {
       var editorEl = this.$refs.codeEditor;
-
-      if (editorEl && !this.editor) {
-        loader.init().then(function (_monaco) {
-          _monaco.editor.create(editorEl, {
-            value: ['function x() {', '\tconsole.log("Hello world!");', '}'].join('\n'),
-            language: 'typescript'
-          });
+      loader.init().then(function (_monaco) {
+        _monaco.editor.create(editorEl, {
+          value: '// some comment',
+          language: 'javascript'
         });
-      }
-    }
-  };
-
-  /* script */
-  var __vue_script__$4 = script$4;
-  /* template */
-
-  var __vue_render__$9 = function __vue_render__() {
-    var _vm = this;
-
-    var _h = _vm.$createElement;
-
-    var _c = _vm._self._c || _h;
-
-    return _c("div", {
-      ref: "codeEditor"
-    });
-  };
-
-  var __vue_staticRenderFns__$9 = [];
-  __vue_render__$9._withStripped = true;
-  /* style */
-
-  var __vue_inject_styles__$9 = undefined;
-  /* scoped */
-
-  var __vue_scope_id__$9 = undefined;
-  /* module identifier */
-
-  var __vue_module_identifier__$9 = undefined;
-  /* functional template */
-
-  var __vue_is_functional_template__$9 = false;
-  /* style inject */
-
-  /* style inject SSR */
-
-  /* style inject shadow dom */
-
-  var __vue_component__$9 = /*#__PURE__*/normalizeComponent_1({
-    render: __vue_render__$9,
-    staticRenderFns: __vue_staticRenderFns__$9
-  }, __vue_inject_styles__$9, __vue_script__$4, __vue_scope_id__$9, __vue_is_functional_template__$9, __vue_module_identifier__$9, false, undefined, undefined, undefined);
-
-  /**
-   * Created by Liu.Jun on 2020/7/22 13:22.
-   */
-  var InputWidget = {
-    name: 'InputWidget',
-    functional: true,
-    render: function render(h, context) {
-      var isTextarea = context.data.attrs.type === 'textarea';
-      return h(isTextarea ? 'gs-textarea' : 'gs-input', context.data, context.children);
-    }
-  };
-
-  //
-  var script$5 = {
-    name: 'ColorPickerWidget',
-    components: {
-      'chrome-color-picker': VueColor__default['default'].Chrome
-    },
-    props: {
-      value: {
-        type: String,
-        default: ''
-      }
-    },
-    emits: ['input'],
-    data: function data() {
-      return {
-        visible: false
-      };
-    },
-    computed: {
-      model: {
-        get: function get() {
-          return this.value;
-        },
-        set: function set(val) {
-          if (val.a < 1) {
-            var _val$rgba = val.rgba,
-                r = _val$rgba.r,
-                g = _val$rgba.g,
-                b = _val$rgba.b,
-                a = _val$rgba.a;
-            this.$emit('input', "rgba(".concat(r, ", ").concat(g, ", ").concat(b, ", ").concat(a, ")"));
-          } else {
-            this.$emit('input', val.hex);
-          }
-        }
-      }
-    },
-    methods: {
-      toggle: function toggle() {
-        this.visible = !this.visible;
-      }
+      });
     }
   };
 
@@ -18852,6 +18729,117 @@
   }
 
   /* script */
+  var __vue_script__$4 = script$4;
+  /* template */
+
+  var __vue_render__$9 = function __vue_render__() {
+    var _vm = this;
+
+    var _h = _vm.$createElement;
+
+    var _c = _vm._self._c || _h;
+
+    return _c("div", {
+      ref: "codeEditor",
+      staticClass: "code_editor"
+    });
+  };
+
+  var __vue_staticRenderFns__$9 = [];
+  __vue_render__$9._withStripped = true;
+  /* style */
+
+  var __vue_inject_styles__$9 = function __vue_inject_styles__(inject) {
+    if (!inject) return;
+    inject("data-v-61da3f18_0", {
+      source: "\n.code_editor {\n    min-height: 150px;\n}\n",
+      map: {
+        "version": 3,
+        "sources": ["F:\\form\\packages\\lib\\vue2\\vue2-form-gsui\\src\\config\\widgets\\CodeEditorWidget\\index.vue"],
+        "names": [],
+        "mappings": ";AAiCA;IACA,iBAAA;AACA",
+        "file": "index.vue",
+        "sourcesContent": ["<template>\n    <div\n        ref=\"codeEditor\"\n        class=\"code_editor\"\n    ></div>\n</template>\n\n<script>\nimport loader from '@monaco-editor/loader';\n\nexport default {\n    name: 'CodeEditorWidget',\n    components: {\n    },\n    data() {\n        return {\n            test: null,\n            editor: null\n        };\n    },\n    mounted() {\n        const editorEl = this.$refs.codeEditor;\n        loader.init().then((_monaco) => {\n            _monaco.editor.create(editorEl, {\n                value: '// some comment',\n                language: 'javascript',\n            });\n        });\n    },\n};\n</script>\n\n<style>\n.code_editor {\n    min-height: 150px;\n}\n</style>\n"]
+      },
+      media: undefined
+    });
+  };
+  /* scoped */
+
+
+  var __vue_scope_id__$9 = undefined;
+  /* module identifier */
+
+  var __vue_module_identifier__$9 = undefined;
+  /* functional template */
+
+  var __vue_is_functional_template__$9 = false;
+  /* style inject SSR */
+
+  /* style inject shadow dom */
+
+  var __vue_component__$9 = /*#__PURE__*/normalizeComponent_1({
+    render: __vue_render__$9,
+    staticRenderFns: __vue_staticRenderFns__$9
+  }, __vue_inject_styles__$9, __vue_script__$4, __vue_scope_id__$9, __vue_is_functional_template__$9, __vue_module_identifier__$9, false, createInjector, undefined, undefined);
+
+  /**
+   * Created by Liu.Jun on 2020/7/22 13:22.
+   */
+  var InputWidget = {
+    name: 'InputWidget',
+    functional: true,
+    render: function render(h, context) {
+      var isTextarea = context.data.attrs.type === 'textarea';
+      return h(isTextarea ? 'gs-textarea' : 'gs-input', context.data, context.children);
+    }
+  };
+
+  //
+  var script$5 = {
+    name: 'ColorPickerWidget',
+    components: {
+      'chrome-color-picker': VueColor__default['default'].Chrome
+    },
+    props: {
+      value: {
+        type: String,
+        default: ''
+      }
+    },
+    emits: ['input'],
+    data: function data() {
+      return {
+        visible: false
+      };
+    },
+    computed: {
+      model: {
+        get: function get() {
+          return this.value;
+        },
+        set: function set(val) {
+          if (val.a < 1) {
+            var _val$rgba = val.rgba,
+                r = _val$rgba.r,
+                g = _val$rgba.g,
+                b = _val$rgba.b,
+                a = _val$rgba.a;
+            this.$emit('input', "rgba(".concat(r, ", ").concat(g, ", ").concat(b, ", ").concat(a, ")"));
+          } else {
+            this.$emit('input', val.hex);
+          }
+        }
+      }
+    },
+    methods: {
+      toggle: function toggle() {
+        this.visible = !this.visible;
+      }
+    }
+  };
+
+  /* script */
   var __vue_script__$5 = script$5;
   /* template */
 
@@ -18901,11 +18889,11 @@
 
   var __vue_inject_styles__$a = function __vue_inject_styles__(inject) {
     if (!inject) return;
-    inject("data-v-8088a142_0", {
+    inject("data-v-01960c9e_0", {
       source: "\n.gs-popover.gs-color-picker-popper {\n    padding: 0;\n    border: 0;\n}\n.gs-color .picker-btn {\n    display: inline-block;\n    padding: 4px;\n    border: 1px solid #ddd;\n    border-radius: 3px;\n}\n.gs-color .picker-btn-bg {\n    display: block;\n    width: 100px;\n    height: 20px;\n}\n",
       map: {
         "version": 3,
-        "sources": ["F:\\vue-json-schema-form\\packages\\lib\\vue2\\vue2-form-gsui\\src\\config\\widgets\\ColorWidget\\index.vue"],
+        "sources": ["F:\\form\\packages\\lib\\vue2\\vue2-form-gsui\\src\\config\\widgets\\ColorWidget\\index.vue"],
         "names": [],
         "mappings": ";AAwEA;IACA,UAAA;IACA,SAAA;AACA;AAEA;IACA,qBAAA;IACA,YAAA;IACA,sBAAA;IACA,kBAAA;AACA;AAEA;IACA,cAAA;IACA,YAAA;IACA,YAAA;AACA",
         "file": "index.vue",
