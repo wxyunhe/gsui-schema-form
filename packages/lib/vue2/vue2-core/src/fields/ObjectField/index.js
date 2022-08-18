@@ -2,10 +2,10 @@
  * Created by Liu.Jun on 2020/4/21 9:24.
  */
 
-import { orderProperties, getUiOptions } from '@lljj/vjsf-utils/formUtils';
-import { computedCurPath, getPathVal } from '@lljj/vjsf-utils/vueUtils';
-import { isObject } from '@lljj/vjsf-utils/utils';
-import FieldGroupWrap from '@lljj/vjsf-utils/components/FieldGroupWrap';
+import { orderProperties, getUiOptions } from '@cps/vjsf-utils/formUtils';
+import { computedCurPath, getPathVal } from '@cps/vjsf-utils/vueUtils';
+import { isObject } from '@cps/vjsf-utils/utils';
+import FieldGroupWrap from '@cps/vjsf-utils/components/FieldGroupWrap';
 import vueProps from '../props';
 import Widget from '../../components/Widget';
 

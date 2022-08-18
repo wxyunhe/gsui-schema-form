@@ -2,13 +2,13 @@
  * Created by Liu.Jun on 2019/11/29 11:25.
  */
 
-import createVue2Core, { fieldProps, SchemaField } from '@lljj/vue2-form-core';
+import createVue2Core, { fieldProps, SchemaField } from '@cps/vue2-form-core';
 
-import i18n from '@lljj/vjsf-utils/i18n';
-import * as vueUtils from '@lljj/vjsf-utils/vueUtils';
-import * as formUtils from '@lljj/vjsf-utils/formUtils';
-import * as schemaValidate from '@lljj/vjsf-utils/schema/validate';
-import getDefaultFormState from '@lljj/vjsf-utils/schema/getDefaultFormState';
+import i18n from '@cps/vjsf-utils/i18n';
+import * as vueUtils from '@cps/vjsf-utils/vueUtils';
+import * as formUtils from '@cps/vjsf-utils/formUtils';
+import * as schemaValidate from '@cps/vjsf-utils/schema/validate';
+import getDefaultFormState from '@cps/vjsf-utils/schema/getDefaultFormState';
 
 import WIDGET_MAP from './config/widgets/WIDGET_MAP.js';
 

@@ -3,15 +3,15 @@
  */
 
 
-import getDefaultFormState from '@lljj/vjsf-utils/schema/getDefaultFormState';
+import getDefaultFormState from '@cps/vjsf-utils/schema/getDefaultFormState';
 
 import {
     allowAdditionalItems, isFixedItems, isMultiSelect
-} from '@lljj/vjsf-utils/formUtils';
-import { getPathVal, setPathVal } from '@lljj/vjsf-utils/vueUtils';
-import { genId, lowerCase } from '@lljj/vjsf-utils/utils';
+} from '@cps/vjsf-utils/formUtils';
+import { getPathVal, setPathVal } from '@cps/vjsf-utils/vueUtils';
+import { genId, lowerCase } from '@cps/vjsf-utils/utils';
 
-import * as arrayMethods from '@lljj/vjsf-utils/arrayUtils';
+import * as arrayMethods from '@cps/vjsf-utils/arrayUtils';
 import Widget from '../../components/Widget';
 
 import vueProps from '../props';

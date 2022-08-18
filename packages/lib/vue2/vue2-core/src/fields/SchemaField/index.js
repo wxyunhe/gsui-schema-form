@@ -2,10 +2,10 @@
  * Created by Liu.Jun on 2020/4/20 9:55 下午.
  */
 
-import { getUiField, isSelect, isHiddenWidget } from '@lljj/vjsf-utils/formUtils';
-import { nodePath2ClassName } from '@lljj/vjsf-utils/vueUtils';
-import { lowerCase } from '@lljj/vjsf-utils/utils';
-import retrieveSchema from '@lljj/vjsf-utils/schema/retriev';
+import { getUiField, isSelect, isHiddenWidget } from '@cps/vjsf-utils/formUtils';
+import { nodePath2ClassName } from '@cps/vjsf-utils/vueUtils';
+import { lowerCase } from '@cps/vjsf-utils/utils';
+import retrieveSchema from '@cps/vjsf-utils/schema/retriev';
 import FIELDS_MAP from '../../FIELDS_MAP';
 import vueProps from '../props';
 

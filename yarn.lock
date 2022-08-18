@@ -1892,6 +1892,13 @@
     core-js "^2.6.0"
     regenerator-runtime "^0.11.1"
 
+"@lljj/vjsf-utils@1.14.0":
+  version "1.14.0"
+  resolved "https://registry.npmmirror.com/@lljj/vjsf-utils/-/vjsf-utils-1.14.0.tgz#7261cf2df370c7f6b1c8d69d3173d2b26c32f8f4"
+  integrity sha512-dqRn6hSN5sYUvaPrCo6srzGy2Uj17hc95R1WHYhQtLNKVEXuoCrs65y/Ez4amT/sShvvWq6/z9klh1hugqlHSA==
+  dependencies:
+    ajv "^6.10.2"
+
 "@lljj/vue-json-schema-form@1.14.0":
   version "1.14.0"
   resolved "https://registry.npmmirror.com/@lljj/vue-json-schema-form/-/vue-json-schema-form-1.14.0.tgz#07370c12523b8dab343f0eb30a73136fb0180c65"
@@ -1899,6 +1906,13 @@
   dependencies:
     "@lljj/vjsf-utils" "1.14.0"
     "@lljj/vue2-form-core" "1.14.0"
+
+"@lljj/vue2-form-core@1.14.0":
+  version "1.14.0"
+  resolved "https://registry.npmmirror.com/@lljj/vue2-form-core/-/vue2-form-core-1.14.0.tgz#e03a77ee90b43790ed1e38315d4ef3987f4a1cf6"
+  integrity sha512-BDv7tGY3t84SObraX4ezg1mS9SmcGUZ/VQKXXx9LC6Ic4YlnTSZ/ekZ3nymmkOqKOUslVbdQ5z/hKYyxy3h6Tg==
+  dependencies:
+    "@lljj/vjsf-utils" "1.14.0"
 
 "@lljj/vue2-form-iview3@1.14.0":
   version "1.14.0"
