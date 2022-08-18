@@ -1892,6 +1892,22 @@
     core-js "^2.6.0"
     regenerator-runtime "^0.11.1"
 
+"@lljj/vue-json-schema-form@1.14.0":
+  version "1.14.0"
+  resolved "https://registry.npmmirror.com/@lljj/vue-json-schema-form/-/vue-json-schema-form-1.14.0.tgz#07370c12523b8dab343f0eb30a73136fb0180c65"
+  integrity sha512-Yp3Bx0hObxfMyd0DSKKPaLBuJ3dVcD8RdLDZ3ZVjp2Wc1eUPDGa87AYYagUbAwp1XgGmc/B60ChcDgUob8k97g==
+  dependencies:
+    "@lljj/vjsf-utils" "1.14.0"
+    "@lljj/vue2-form-core" "1.14.0"
+
+"@lljj/vue2-form-iview3@1.14.0":
+  version "1.14.0"
+  resolved "https://registry.npmmirror.com/@lljj/vue2-form-iview3/-/vue2-form-iview3-1.14.0.tgz#e6f72d192688f01615aa9b1e5fba3fc895885a59"
+  integrity sha512-6AxUM7FXJ139eEHIM56A+OrVDMSyYzwOUdI87mmyWg/QtNKVlKvQNR1jjlCV9YQLJ3b5mxgEKtrLULGgA9Ex4g==
+  dependencies:
+    "@lljj/vjsf-utils" "1.14.0"
+    "@lljj/vue2-form-core" "1.14.0"
+
 "@marionebl/sander@^0.6.0":
   version "0.6.1"
   resolved "https://registry.yarnpkg.com/@marionebl/sander/-/sander-0.6.1.tgz#1958965874f24bc51be48875feb50d642fc41f7b"
