@@ -1,11 +1,12 @@
 <template>
-    <div ref="codeEditor" class="code_editor"></div>
+    <div
+        ref="codeEditor"
+        class="code_editor"
+    ></div>
 </template>
 
 <script>
-// import * as monaco from 'monaco-editor';
 import loader from '@monaco-editor/loader';
-// loader.config({ monaco: window.monaco });
 
 export default {
     name: 'CodeEditorWidget',
