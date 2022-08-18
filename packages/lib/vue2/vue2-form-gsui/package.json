@@ -1,6 +1,6 @@
 {
     "name": "@cps/vue2-schema-form-gsui",
-    "version": "2.14.1-alpha.0",
+    "version": "2.14.1-alpha.1",
     "description": "基于 Vue 、ElementUi、JsonSchema快速构建一个带完整校验的form表单",
     "main": "dist/vue2-form-gsui.umd.min.js",
     "module": "dist/vue2-form-gsui.esm.min.js",
