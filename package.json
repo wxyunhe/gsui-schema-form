@@ -10,44 +10,35 @@
         "packages/demo/**"
     ],
     "scripts": {
-        "docs:dev": "yarn workspace docs dev",
-        "docs:build": "yarn workspace docs build",
-        "lib:build": "yarn lib-gsui:build",
-        "lib-gsui:watch": "yarn workspace @cps/vue2-schema-form-gsui watch",
-        "lib-gsui:build": "yarn workspace @cps/vue2-schema-form-gsui build",
-        "demo:dev": "yarn workspace demo dev",
-        "demo:build": "yarn workspace demo build",
+        "docs:dev": "pnpm --filter docs dev",
+        "docs:build": "pnpm --filter docs build",
+        "lib:build": "pnpm run lib-gsui:build",
+        "lib-gsui:watch": "pnpm --filter @cps/vue2-schema-form-gsui watch",
+        "lib-gsui:build": "pnpm --filter @cps/vue2-schema-form-gsui build",
+        "demo:dev": "pnpm --filter demo dev",
+        "demo:build": "pnpm --filter demo build",
         "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 2",
-        "clean": "lerna clean && rm -rf node_modules",
+        "clean": "lerna clean && rimraf node_modules",
         "packages:diff": "lerna diff",
         "packages:list": "lerna ls -l",
         "packages:changed": "lerna changed",
         "packages:build": "lerna run --stream --sort build",
-        "publish1": "yarn run lib:build && lerna publish",
+        "publish1": "pnpm run lib:build && lerna publish",
         "autoPublish": "lerna publish --conventional-commits --yes",
         "autoVersion": "lerna version --conventional-commits --yes"
-    },
-    "config": {
-        "commitizen": {
-            "path": "./node_modules/cz-conventional-changelog"
-        }
-    },
-    "dependencies": {},
-    "husky": {
-        "hooks": {
-            "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-        }
     },
     "devDependencies": {
         "@commitlint/cli": "^8.3.5",
         "@commitlint/config-conventional": "^8.3.4",
+        "@types/express-serve-static-core": "4.17.30",
         "@vue/compiler-sfc": "^3.0.0",
-        "naive-ui": "^2.26.1",
         "commitizen": "^4.1.2",
         "conventional-changelog-cli": "^2.0.34",
         "cz-conventional-changelog": "^3.2.0",
         "husky": "^4.2.5",
-        "lerna": "^3.22.1"
+        "lerna": "^3.22.1",
+        "naive-ui": "^2.26.1",
+        "rimraf": "^3.0.2"
     },
     "version": "0.0.0"
 }
