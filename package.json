@@ -12,9 +12,8 @@
     "scripts": {
         "docs:dev": "pnpm --filter docs dev",
         "docs:build": "pnpm --filter docs build",
-        "lib:build": "pnpm run lib-gsui:build",
-        "lib-gsui:watch": "pnpm --filter @cps/vue2-schema-form-gsui watch",
-        "lib-gsui:build": "pnpm --filter @cps/vue2-schema-form-gsui build",
+        "lib:watch": "pnpm --filter @cps/vue2-schema-form-gsui watch",
+        "lib:build": "pnpm --filter @cps/vue2-schema-form-gsui build",
         "demo:dev": "pnpm --filter demo dev",
         "demo:build": "pnpm --filter demo build",
         "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 2",
