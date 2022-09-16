@@ -123,44 +123,4 @@ module.exports = {
             config.plugins.delete(`prefetch-${item}`);
         });
     },
-
-    css: {
-        requireModuleExtension: true,
-        sourceMap: !isProduction,
-        extract: isProduction,
-    },
-
-    // All options for webpack-dev-server are supported
-    // https://webpack.js.org/configuration/dev-server/
-    devServer: {
-        clientLogLevel: 'info',
-        open: true,
-        openPage,
-        port: 8800,
-        host: '127.0.0.1',
-        overlay: {
-            warnings: false,
-            errors: true
-        },
-        publicPath: '/',
-        proxy: {
-            '/api-dev': {
-                target: 'http://www.api.com',
-                hot: true,
-                open: true,
-                contentBase: false,
-                historyApiFallback: false,
-                changeOrigin: true,
-                pathRewrite: {
-                    '^/api-dev': ''
-                }
-            }
-        }
-    },
-
-    // https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-pwa
-    pwa: {},
-
-    // 第三方插件配置
-    pluginOptions: {}
 };
