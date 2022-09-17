@@ -2,18 +2,16 @@
  * Created by Liu.Jun on 2020/6/2 15:58.
  */
 
-const nodeResolve = require('rollup-plugin-node-resolve');
-const commonjs = require('rollup-plugin-commonjs');
+const { nodeResolve } = require('@rollup/plugin-node-resolve');
+const commonjs = require('@rollup/plugin-commonjs');
 const filesize = require('rollup-plugin-filesize');
 const postcss = require('rollup-plugin-postcss');
-// const buble = require('rollup-plugin-buble');
-const babel = require('rollup-plugin-babel');
+const { babel } = require('@rollup/plugin-babel');
 const del = require('rollup-plugin-delete');
 const vue = require('rollup-plugin-vue');
-const json = require('rollup-plugin-json');
+const json = require('@rollup/plugin-json');
 const terser = require('rollup-plugin-terser').terser;
-const visualizer = require('rollup-plugin-visualizer');
-const eslint = require('rollup-plugin-eslint').eslint;
+const { visualizer } = require('rollup-plugin-visualizer');
 
 const path = require('path');
 const config = require('./config');
@@ -79,13 +77,13 @@ module.exports = ({
                 extensions: ['.mjs', '.js', '.jsx', '.json', '.vue'],
                 browser: true
             }),
-            eslint(),
             vue({
                 normalizer: '~vue-runtime-helpers/dist/normalize-component.js'
             }),
             babel({
                 exclude: /node_modules\/(?!(@lljj)\/).*/,
                 extensions: ['.js', '.vue'],
+                babelHelpers: "bundled"
             }),
             postcss({
                 extract: config.extractcss,
