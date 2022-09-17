@@ -35,7 +35,7 @@
         "conventional-changelog-cli": "^2.0.34",
         "cz-conventional-changelog": "^3.2.0",
         "husky": "^4.2.5",
-        "lerna": "^3.22.1",
+        "lerna": "^5.5.1",
         "rimraf": "^3.0.2"
     },
     "version": "0.0.0"

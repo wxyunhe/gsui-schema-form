@@ -2,7 +2,6 @@
 
 body {
     color: var(--normalC);
-    line-height: 1;
     min-width: var(--contentWidth);
     word-wrap: break-word;
     word-break: break-word;
