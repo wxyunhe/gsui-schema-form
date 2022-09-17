@@ -28,7 +28,7 @@ importers:
       naive-ui: registry.npmmirror.com/naive-ui/2.33.3
       rimraf: registry.npmmirror.com/rimraf/3.0.2
 
-  E:/workspace/vue2-schema-form-gsui/packages/demo:
+  packages/demo:
     specifiers:
       '@babel/core': ^7.18.13
       '@babel/plugin-transform-runtime': ^7.18.10
@@ -41,7 +41,6 @@ importers:
       '@lljj/vue-json-schema-form': 1.14.0
       '@lljj/vue2-form-iview3': 1.14.0
       '@monaco-editor/loader': ^1.3.2
-      axios: ^0.27.2
       babel-loader: ^8.2.5
       copy-webpack-plugin: ^11.0.0
       css-loader: ^6.7.1
@@ -49,7 +48,6 @@ importers:
       html-loader: ^4.1.0
       html-webpack-plugin: ^5.5.0
       html-webpack-tags-plugin: ^3.0.2
-      iview: ^3.5.4
       postcss: ^8.4.16
       postcss-import: ^15.0.0
       postcss-loader: ^7.0.1
@@ -72,9 +70,7 @@ importers:
       '@lljj/vue-json-schema-form': registry.npmmirror.com/@lljj/vue-json-schema-form/1.14.0
       '@lljj/vue2-form-iview3': registry.npmmirror.com/@lljj/vue2-form-iview3/1.14.0
       '@monaco-editor/loader': registry.npmmirror.com/@monaco-editor/loader/1.3.2
-      axios: registry.npmmirror.com/axios/0.27.2
       element-ui: registry.npmmirror.com/element-ui/2.15.10_vue@2.7.10
-      iview: registry.npmmirror.com/iview/3.5.4_vue@2.7.10
       vue: registry.npmmirror.com/vue/2.7.10
       vue-router: registry.npmmirror.com/vue-router/3.6.5
       vuedraggable: registry.npmmirror.com/vuedraggable/2.23.2
@@ -90,77 +86,6 @@ importers:
       html-loader: registry.npmmirror.com/html-loader/4.1.0_webpack@5.74.0
       html-webpack-plugin: registry.npmmirror.com/html-webpack-plugin/5.5.0_webpack@5.74.0
       html-webpack-tags-plugin: registry.npmmirror.com/html-webpack-tags-plugin/3.0.2_dseqt6curza6cwqlyc3eowsnru
-      postcss: registry.npmmirror.com/postcss/8.4.16
-      postcss-import: registry.npmmirror.com/postcss-import/15.0.0_postcss@8.4.16
-      postcss-loader: registry.npmmirror.com/postcss-loader/7.0.1_qjv4cptcpse3y5hrjkrbb7drda
-      postcss-mixins: registry.npmmirror.com/postcss-mixins/9.0.4_postcss@8.4.16
-      postcss-nested: registry.npmmirror.com/postcss-nested/5.0.6_postcss@8.4.16
-      postcss-preset-env: registry.npmmirror.com/postcss-preset-env/7.8.2_postcss@8.4.16
-      style-loader: registry.npmmirror.com/style-loader/3.3.1_webpack@5.74.0
-      vue-loader: registry.npmmirror.com/vue-loader/15.10.0_vsyllalxesco42bbuzcqgel7xq
-      vue-template-compiler: registry.npmmirror.com/vue-template-compiler/2.7.10
-      webpack: registry.npmmirror.com/webpack/5.74.0_webpack-cli@4.10.0
-      webpack-cli: registry.npmmirror.com/webpack-cli/4.10.0_mldmorf72vas4wjtkspcp7zl7m
-      webpack-dev-server: registry.npmmirror.com/webpack-dev-server/4.11.0_5v66e2inugklgvlh4huuavolfq
-
-  packages/demo:
-    specifiers:
-      '@babel/core': ^7.18.13
-      '@babel/plugin-transform-runtime': ^7.18.10
-      '@babel/preset-env': ^7.18.10
-      '@babel/runtime': ^7.18.9
-      '@cps/vue2-schema-form-gsui': 2.14.1-alpha.1
-      '@gs-ui/gs-ui': ^2.11.11
-      '@lljj/babel-preset-app': ^0.0.1
-      '@lljj/polyfill': ^0.1.0
-      '@lljj/vue-json-schema-form': 1.14.0
-      '@lljj/vue2-form-iview3': 1.14.0
-      '@monaco-editor/loader': ^1.3.2
-      axios: ^0.27.2
-      babel-loader: ^8.2.5
-      css-loader: ^6.7.1
-      element-ui: ^2.15.9
-      html-loader: ^4.1.0
-      html-webpack-plugin: ^5.5.0
-      iview: ^3.5.4
-      postcss: ^8.4.16
-      postcss-import: ^15.0.0
-      postcss-loader: ^7.0.1
-      postcss-mixins: ^9.0.4
-      postcss-nested: ^5.0.6
-      postcss-preset-env: ^7.8.2
-      style-loader: ^3.3.1
-      vue: ^2.7.10
-      vue-loader: ^15.10.0
-      vue-router: ^3.6.4
-      vue-template-compiler: ^2.7.10
-      vuedraggable: 2.23.2
-      webpack: ^5.74.0
-      webpack-cli: ^4.10.0
-      webpack-dev-server: ^4.10.1
-    dependencies:
-      '@cps/vue2-schema-form-gsui': 10.201.80.174+7001/@cps/vue2-schema-form-gsui/2.14.1-alpha.1
-      '@gs-ui/gs-ui': 10.201.80.174+7001/@gs-ui/gs-ui/2.11.11
-      '@lljj/polyfill': registry.npmmirror.com/@lljj/polyfill/0.1.2
-      '@lljj/vue-json-schema-form': registry.npmmirror.com/@lljj/vue-json-schema-form/1.14.0
-      '@lljj/vue2-form-iview3': registry.npmmirror.com/@lljj/vue2-form-iview3/1.14.0
-      '@monaco-editor/loader': registry.npmmirror.com/@monaco-editor/loader/1.3.2
-      axios: registry.npmmirror.com/axios/0.27.2
-      element-ui: registry.npmmirror.com/element-ui/2.15.10_vue@2.7.10
-      iview: registry.npmmirror.com/iview/3.5.4_vue@2.7.10
-      vue: registry.npmmirror.com/vue/2.7.10
-      vue-router: registry.npmmirror.com/vue-router/3.6.5
-      vuedraggable: registry.npmmirror.com/vuedraggable/2.23.2
-    devDependencies:
-      '@babel/core': registry.npmmirror.com/@babel/core/7.19.1
-      '@babel/plugin-transform-runtime': registry.npmmirror.com/@babel/plugin-transform-runtime/7.19.1_@babel+core@7.19.1
-      '@babel/preset-env': registry.npmmirror.com/@babel/preset-env/7.19.1_@babel+core@7.19.1
-      '@babel/runtime': registry.npmmirror.com/@babel/runtime/7.19.0
-      '@lljj/babel-preset-app': registry.npmmirror.com/@lljj/babel-preset-app/0.0.1_vue@2.7.10
-      babel-loader: registry.npmmirror.com/babel-loader/8.2.5_rhsdbzevgb5tizdhlla5jsbgyu
-      css-loader: registry.npmmirror.com/css-loader/6.7.1_webpack@5.74.0
-      html-loader: registry.npmmirror.com/html-loader/4.1.0_webpack@5.74.0
-      html-webpack-plugin: registry.npmmirror.com/html-webpack-plugin/5.5.0_webpack@5.74.0
       postcss: registry.npmmirror.com/postcss/8.4.16
       postcss-import: registry.npmmirror.com/postcss-import/15.0.0_postcss@8.4.16
       postcss-loader: registry.npmmirror.com/postcss-loader/7.0.1_qjv4cptcpse3y5hrjkrbb7drda
@@ -5904,6 +5829,7 @@ packages:
     resolution: {integrity: sha512-Oei9OH4tRh0YqU3GxhX79dM/mwVgvbZJaSNaRk+bshkj0S5cfHcgYakreBjrHwatXKbz+IoIdYLxrKim2MjW0Q==, registry: http://registry.npm.gridsum.com/, tarball: https://registry.npmmirror.com/asynckit/-/asynckit-0.4.0.tgz}
     name: asynckit
     version: 0.4.0
+    dev: true
 
   registry.npmmirror.com/at-least-node/1.0.0:
     resolution: {integrity: sha512-+q/t7Ekv1EDY2l6Gda6LLiX14rU9TV20Wa3ofeQmwPFZbOMo9DXrLbOjFaaclkXKWidIaopwAObQDqwWtGUjqg==, registry: http://registry.npm.gridsum.com/, tarball: https://registry.npmmirror.com/at-least-node/-/at-least-node-1.0.0.tgz}
@@ -5993,17 +5919,6 @@ packages:
     name: aws4
     version: 1.11.0
     dev: true
-
-  registry.npmmirror.com/axios/0.27.2:
-    resolution: {integrity: sha512-t+yRIyySRTp/wua5xEr+z1q60QmLq8ABsS5O9Me1AsE5dfKqgnCFzwiCZZ/cGNd1lq4/7akDWMxdhVlucjmnOQ==, registry: http://registry.npm.gridsum.com/, tarball: https://registry.npmmirror.com/axios/-/axios-0.27.2.tgz}
-    name: axios
-    version: 0.27.2
-    dependencies:
-      follow-redirects: registry.npmmirror.com/follow-redirects/1.15.2
-      form-data: registry.npmmirror.com/form-data/4.0.0
-    transitivePeerDependencies:
-      - debug
-    dev: false
 
   registry.npmmirror.com/babel-eslint/8.2.2:
     resolution: {integrity: sha512-Qt2lz2egBxNYWqN9JIO2z4NOOf8i4b5JS6CFoYrOZZTDssueiV1jH/jsefyg+86SeNY3rB361/mi3kE1WK2WYQ==, registry: http://registry.npm.gridsum.com/, tarball: https://registry.npmmirror.com/babel-eslint/-/babel-eslint-8.2.2.tgz}
@@ -6221,12 +6136,6 @@ packages:
     name: base64-js
     version: 1.5.1
     dev: true
-
-  registry.npmmirror.com/batch-processor/1.0.0:
-    resolution: {integrity: sha512-xoLQD8gmmR32MeuBHgH0Tzd5PuSZx71ZsbhVxOCRbgktZEPe4SQy7s9Z50uPp0F/f7iw2XmkHN2xkgbMfckMDA==, registry: http://registry.npm.gridsum.com/, tarball: https://registry.npmmirror.com/batch-processor/-/batch-processor-1.0.0.tgz}
-    name: batch-processor
-    version: 1.0.0
-    dev: false
 
   registry.npmmirror.com/batch/0.6.1:
     resolution: {integrity: sha512-x+VAiMRL6UPkx+kudNvxTl6hB2XNNCG2r+7wixVfIYwu/2HKRXimwQyaumLjMveWvT2Hkd/cAJw+QBMfJ/EKVw==, registry: http://registry.npm.gridsum.com/, tarball: https://registry.npmmirror.com/batch/-/batch-0.6.1.tgz}
@@ -7431,6 +7340,7 @@ packages:
     engines: {node: '>= 0.8'}
     dependencies:
       delayed-stream: registry.npmmirror.com/delayed-stream/1.0.0
+    dev: true
 
   registry.npmmirror.com/commander/2.17.1:
     resolution: {integrity: sha512-wPMUt6FnH2yzG95SA6mzjQOEKUU3aLaDEmzs1ti+1E9h+CsrZghRlqEM/EJ4KscsQVG8uNN4uVreUeT8+drlgg==, registry: http://registry.npm.gridsum.com/, tarball: https://registry.npmmirror.com/commander/-/commander-2.17.1.tgz}
@@ -9194,13 +9104,6 @@ packages:
     version: 1.5.2
     engines: {node: '>=0.10.0'}
 
-  registry.npmmirror.com/deepmerge/2.2.1:
-    resolution: {integrity: sha512-R9hc1Xa/NOBi9WRVUWg19rl1UB7Tt4kuPd+thNJgFZoxXsTz7ncaPaeIm+40oSGuP33DfMb4sZt1QIGiJzC4EA==, registry: http://registry.npm.gridsum.com/, tarball: https://registry.npmmirror.com/deepmerge/-/deepmerge-2.2.1.tgz}
-    name: deepmerge
-    version: 2.2.1
-    engines: {node: '>=0.10.0'}
-    dev: false
-
   registry.npmmirror.com/default-gateway/4.2.0:
     resolution: {integrity: sha512-h6sMrVB1VMWVrW13mSc6ia/DwYYw5MN6+exNu1OaJeFac5aSAvwM7lZ0NVfTABuSkQelr4h5oebg3KB1XPdjgA==, registry: http://registry.npm.gridsum.com/, tarball: https://registry.npmmirror.com/default-gateway/-/default-gateway-4.2.0.tgz}
     name: default-gateway
@@ -9299,6 +9202,7 @@ packages:
     name: delayed-stream
     version: 1.0.0
     engines: {node: '>=0.4.0'}
+    dev: true
 
   registry.npmmirror.com/delegates/1.0.0:
     resolution: {integrity: sha512-bd2L678uiWATM6m5Z1VzNCErI3jiGzt6HGY8OVICs40JQq/HALfbyNJmp0UDakEY4pMMaN0Ly5om/B1VI/+xfQ==, registry: http://registry.npm.gridsum.com/, tarball: https://registry.npmmirror.com/delegates/-/delegates-1.0.0.tgz}
@@ -9662,14 +9566,6 @@ packages:
     name: electron-to-chromium
     version: 1.4.249
     dev: true
-
-  registry.npmmirror.com/element-resize-detector/1.2.4:
-    resolution: {integrity: sha512-Fl5Ftk6WwXE0wqCgNoseKWndjzZlDCwuPTcoVZfCP9R3EHQF8qUtr3YUPNETegRBOKqQKPW3n4kiIWngGi8tKg==, registry: http://registry.npm.gridsum.com/, tarball: https://registry.npmmirror.com/element-resize-detector/-/element-resize-detector-1.2.4.tgz}
-    name: element-resize-detector
-    version: 1.2.4
-    dependencies:
-      batch-processor: registry.npmmirror.com/batch-processor/1.0.0
-    dev: false
 
   registry.npmmirror.com/element-ui/2.15.10:
     resolution: {integrity: sha512-jmD++mU2wKXbisvx4fxOl2mHaU+HWHTAq/3Wf8x9Bwyu4GdDZPLABb+CGi3DWN6fPqdgRcd74aX39DO+YHObLw==, registry: http://registry.npm.gridsum.com/, tarball: https://registry.npmmirror.com/element-ui/-/element-ui-2.15.10.tgz}
@@ -11132,6 +11028,7 @@ packages:
     peerDependenciesMeta:
       debug:
         optional: true
+    dev: true
 
   registry.npmmirror.com/follow-redirects/1.15.2_debug@4.3.4:
     resolution: {integrity: sha512-VQLG33o04KaQ8uYi2tVNbdrWp1QWxNNea+nmIB4EVM28v0hmP17z7aG1+wAkNzVq4KeXTq3221ye5qTJP91JwA==, registry: http://registry.npm.gridsum.com/, tarball: https://registry.npmmirror.com/follow-redirects/-/follow-redirects-1.15.2.tgz}
@@ -11177,17 +11074,6 @@ packages:
       combined-stream: registry.npmmirror.com/combined-stream/1.0.8
       mime-types: registry.npmmirror.com/mime-types/2.1.35
     dev: true
-
-  registry.npmmirror.com/form-data/4.0.0:
-    resolution: {integrity: sha512-ETEklSGi5t0QMZuiXoA/Q6vcnxcLQP5vdugSpuAyi6SVGi2clPPp+xgEhuMaHC+zGgn31Kd235W35f7Hykkaww==, registry: http://registry.npm.gridsum.com/, tarball: https://registry.npmmirror.com/form-data/-/form-data-4.0.0.tgz}
-    name: form-data
-    version: 4.0.0
-    engines: {node: '>= 6'}
-    dependencies:
-      asynckit: registry.npmmirror.com/asynckit/0.4.0
-      combined-stream: registry.npmmirror.com/combined-stream/1.0.8
-      mime-types: registry.npmmirror.com/mime-types/2.1.35
-    dev: false
 
   registry.npmmirror.com/forwarded/0.2.0:
     resolution: {integrity: sha512-buRG0fpBtRHSTCOASe6hD258tEubFoRLb4ZNA6NxMVHNw2gOcwHo9wyablzMzOA5z9xA9L1KNjk/Nt6MT9aYow==, registry: http://registry.npm.gridsum.com/, tarball: https://registry.npmmirror.com/forwarded/-/forwarded-0.2.0.tgz}
@@ -13537,26 +13423,6 @@ packages:
     version: 0.1.2
     dev: true
 
-  registry.npmmirror.com/iview/3.5.4_vue@2.7.10:
-    resolution: {integrity: sha512-CEDHdAXxpGciMV+m1jdMDs0UVqzk/AaFhCDtSGcKDLidXRMOG2TgCZhtEHhI4mf3lchKEUFO/BcXtHAfBNuy7Q==, registry: http://registry.npm.gridsum.com/, tarball: https://registry.npmmirror.com/iview/-/iview-3.5.4.tgz}
-    id: registry.npmmirror.com/iview/3.5.4
-    name: iview
-    version: 3.5.4
-    engines: {node: '>=8.9.1', npm: '>=5.5.1', yarn: '>=1.3.2'}
-    peerDependencies:
-      vue: ^2.5.2
-    dependencies:
-      async-validator: registry.npmmirror.com/async-validator/1.12.2
-      deepmerge: registry.npmmirror.com/deepmerge/2.2.1
-      element-resize-detector: registry.npmmirror.com/element-resize-detector/1.2.4
-      js-calendar: registry.npmmirror.com/js-calendar/1.2.3
-      lodash.throttle: registry.npmmirror.com/lodash.throttle/4.1.1
-      popper.js: registry.npmmirror.com/popper.js/1.16.1
-      tinycolor2: registry.npmmirror.com/tinycolor2/1.4.2
-      v-click-outside-x: registry.npmmirror.com/v-click-outside-x/4.1.3
-      vue: registry.npmmirror.com/vue/2.7.10
-    dev: false
-
   registry.npmmirror.com/javascript-stringify/1.6.0:
     resolution: {integrity: sha512-fnjC0up+0SjEJtgmmG+teeel68kutkvzfctO/KxE3qJlbunkJYAshgH3boU++gSBHP8z5/r0ts0qRIrHf0RTQQ==, registry: http://registry.npm.gridsum.com/, tarball: https://registry.npmmirror.com/javascript-stringify/-/javascript-stringify-1.6.0.tgz}
     name: javascript-stringify
@@ -13596,12 +13462,6 @@ packages:
     name: js-base64
     version: 2.6.4
     dev: true
-
-  registry.npmmirror.com/js-calendar/1.2.3:
-    resolution: {integrity: sha512-dAA1/Zbp4+c5E+ARCVTIuKepXsNLzSYfzvOimiYD4S5eeP9QuplSHLcdhfqFSwyM1o1u6ku6RRRCyaZ0YAjiBw==, registry: http://registry.npm.gridsum.com/, tarball: https://registry.npmmirror.com/js-calendar/-/js-calendar-1.2.3.tgz}
-    name: js-calendar
-    version: 1.2.3
-    dev: false
 
   registry.npmmirror.com/js-stringify/1.0.2:
     resolution: {integrity: sha512-rtS5ATOo2Q5k1G+DADISilDA6lv79zIiwFd6CcjuIxGKLFm5C+RLImRscVap9k55i+MOZwgliw+NejvkLuGD5g==, registry: http://registry.npm.gridsum.com/, tarball: https://registry.npmmirror.com/js-stringify/-/js-stringify-1.0.2.tgz}
@@ -14688,6 +14548,7 @@ packages:
     name: mime-db
     version: 1.52.0
     engines: {node: '>= 0.6'}
+    dev: true
 
   registry.npmmirror.com/mime-types/2.1.35:
     resolution: {integrity: sha512-ZDY+bPm5zTTF+YpCrAU9nK0UgICYPT0QtT1NZWFv4s++TNkcgVaT0g6+4R2uI4MjQjzysHB1zxuWL50hzaeXiw==, registry: http://registry.npm.gridsum.com/, tarball: https://registry.npmmirror.com/mime-types/-/mime-types-2.1.35.tgz}
@@ -14696,6 +14557,7 @@ packages:
     engines: {node: '>= 0.6'}
     dependencies:
       mime-db: registry.npmmirror.com/mime-db/1.52.0
+    dev: true
 
   registry.npmmirror.com/mime/1.6.0:
     resolution: {integrity: sha512-x0Vn8spI+wuJ1O6S7gnbaQg8Pxh4NNHb7KSINmEWKiPE4RKOplvijn+NkmYmmRgP68mc70j2EbeTFRsrswaQeg==, registry: http://registry.npm.gridsum.com/, tarball: https://registry.npmmirror.com/mime/-/mime-1.6.0.tgz}
@@ -16523,13 +16385,6 @@ packages:
       onecolor: registry.npmmirror.com/onecolor/3.1.0
       postcss: registry.npmmirror.com/postcss/6.0.23
     dev: true
-
-  registry.npmmirror.com/popper.js/1.16.1:
-    resolution: {integrity: sha512-Wb4p1J4zyFTbM+u6WuO4XstYx4Ky9Cewe4DWrel7B0w6VVICvPwdOpotjzcf6eD8TsckVnIMNONQyPIUFOUbCQ==, registry: http://registry.npm.gridsum.com/, tarball: https://registry.npmmirror.com/popper.js/-/popper.js-1.16.1.tgz}
-    name: popper.js
-    version: 1.16.1
-    deprecated: You can find the new Popper v2 at @popperjs/core, this package is dedicated to the legacy v1
-    dev: false
 
   registry.npmmirror.com/portfinder/1.0.32:
     resolution: {integrity: sha512-on2ZJVVDXRADWE6jnQaX0ioEylzgBpQk8r55NE4wjXW1ZxO+BgDlY6DXwj20i0V8eB4SenDQ00WEaxfiIQPcxg==, registry: http://registry.npm.gridsum.com/, tarball: https://registry.npmmirror.com/portfinder/-/portfinder-1.0.32.tgz}
@@ -21954,13 +21809,6 @@ packages:
     version: 8.3.2
     hasBin: true
     dev: true
-
-  registry.npmmirror.com/v-click-outside-x/4.1.3:
-    resolution: {integrity: sha512-qK4wwuDHK406fGBSJ4DbioPb6LQpRkWqk8i1TZhnVwObU+W4Ra6H7Cn+VLy/dTNTH/sgZJzk9YMYnB/s5RJ0Hg==, registry: http://registry.npm.gridsum.com/, tarball: https://registry.npmmirror.com/v-click-outside-x/-/v-click-outside-x-4.1.3.tgz}
-    name: v-click-outside-x
-    version: 4.1.3
-    engines: {node: '>=8.11.4', npm: '>=6.10.1'}
-    dev: false
 
   registry.npmmirror.com/v-distpicker/1.3.2:
     resolution: {integrity: sha512-EqE4OOUIdU3T1q9nWn+1rI9F70jLBr+2s+bUdrA4AJ1wndP9Xe83gaqbnF45F66TmNGq9Am+/W4IZRxgTzb5PA==, registry: http://registry.npm.gridsum.com/, tarball: https://registry.npmmirror.com/v-distpicker/-/v-distpicker-1.3.2.tgz}

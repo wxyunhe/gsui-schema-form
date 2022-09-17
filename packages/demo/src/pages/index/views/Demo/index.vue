@@ -79,7 +79,7 @@
                 <router-link
                     v-for="item in typeItems"
                     :key="item"
-                    v-slot="{ href, route, navigate, isActive, isExactActive }"
+                    v-slot="{navigate }"
                     :class="{
                         [$style.linkItem]: true,
                         [$style.active]: item === curType
@@ -201,15 +201,6 @@ import schemaTypes from 'demo-common/schemaTypes';
 
 const VueElementForm = () => import('@lljj/vue-json-schema-form');
 
-const VueIview3Form = async () => {
-    const [, ivewForm] = await Promise.all([
-        import('demo-common/components/iView/index.js'),
-        import('@lljj/vue2-form-iview3')
-    ]);
-
-    return ivewForm;
-};
-
 const VueGsUiForm = async () => {
     const [, gsuiForm] = await Promise.all([
         import('demo-common/components/GsUi/index.js'),
@@ -227,8 +218,6 @@ export default {
         CodeEditor,
         EditorHeader,
         VueElementForm,
-        // eslint-disable-next-line vue/no-unused-components
-        VueIview3Form,
         VueGsUiForm,
     },
     data() {
@@ -239,9 +228,6 @@ export default {
             formComponents: [{
                 name: 'ElementUi',
                 component: 'VueElementForm'
-            }, {
-                name: 'Iview3',
-                component: 'VueIview3Form'
             }, {
                 name: 'gsui',
                 component: 'VueGsUiForm'
