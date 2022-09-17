@@ -1,5 +1,7 @@
 const path = require("path");
+const CopyWebpackPlugin = require('copy-webpack-plugin')
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const HtmlWebpackTagsPlugin = require('html-webpack-tags-plugin')
 const { VueLoaderPlugin } = require("vue-loader");
 
 module.exports = {
@@ -11,10 +13,13 @@ module.exports = {
   resolve: {
     extensions: [".vue", ".js", ".jsx", ".json"],
     alias: {
-      "@": path.resolve(__dirname, "src/"),
       "demo-common": path.resolve(__dirname, "src/common/"),
       // "@cps/vue2-schema-form-gsui": '@cps/vue2-schema-form-gsui/src/index'
     },
+  },
+  externals: {
+    'vue': 'Vue',
+    'vue-router': 'VueRouter',
   },
   module: {
     rules: [
@@ -60,6 +65,25 @@ module.exports = {
       inject: "body",
       filename: "schema-generator.html",
       chunks: ["schema-generator"]
+    }),
+    new HtmlWebpackTagsPlugin({
+      links: [
+        'https://cdn.jsdelivr.net/npm/element-ui@2.15.10/lib/theme-chalk/index.css',
+        'public/gs-ui/gs-ui.min.css',
+      ],
+      scripts: [
+        'https://cdn.jsdelivr.net/npm/vue@2.7.10/dist/vue.min.js',
+        'https://cdn.jsdelivr.net/npm/vue-router@3.6.5/dist/vue-router.min.js',
+        'https://cdn.jsdelivr.net/npm/element-ui@2.15.10/lib/index.js',
+        'public/gs-ui/gs-ui.min.js',
+      ],
+      append: false
+    }),
+    new CopyWebpackPlugin({
+      patterns: [
+        { from: 'node_modules/@gs-ui/gs-ui/lib/umd/gs-ui.min.js', to: 'public/gs-ui' },
+        { from: 'node_modules/@gs-ui/gs-ui/lib/umd/gs-ui.min.css', to: 'public/gs-ui' },
+      ]
     }),
     new VueLoaderPlugin(),
   ],

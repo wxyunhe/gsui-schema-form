@@ -1,8 +1,6 @@
 /**
  * Created by Liu.Jun on 2020/11/20 9:43.
  */
-import 'element-ui/lib/theme-chalk/index.css';
-import './theme/index.css';
 import ELEMENT from 'element-ui';
 
 const {
