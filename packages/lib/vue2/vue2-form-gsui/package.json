@@ -4,6 +4,9 @@
     "description": "基于 Vue 、ElementUi、JsonSchema快速构建一个带完整校验的form表单",
     "main": "dist/vue2-form-gsui.umd.min.js",
     "module": "dist/vue2-form-gsui.esm.min.js",
+    "maintainers": [
+      "cps"
+    ],
     "scripts": {
         "watch": "node scripts/watch.js",
         "build": "node scripts/build.js"
@@ -66,5 +69,5 @@
         "last 2 versions",
         "not ie <= 8"
     ],
-    "gitHead": "92795075169c879e1c1fabfe26f1d3c10b861060"
+    "gitHead": "d73c70a4aefec4dc6d876662a2ad5ba3c9f8e587"
 }

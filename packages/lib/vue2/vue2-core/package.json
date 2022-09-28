@@ -4,6 +4,9 @@
     "description": "基于 Vue 、JsonSchema快速构建一个带完整校验的form表单，vue2版本基础框架",
     "main": "src/index.js",
     "module": "src/index.js",
+    "maintainers": [
+      "cps"
+    ],
     "keywords": [
         "vue",
         "vuejs",
@@ -25,5 +28,5 @@
         "last 2 versions",
         "not ie <= 8"
     ],
-    "gitHead": "92795075169c879e1c1fabfe26f1d3c10b861060"
+    "gitHead": "d73c70a4aefec4dc6d876662a2ad5ba3c9f8e587"
 }
