@@ -26,30 +26,6 @@ importers:
       lerna: registry.npmmirror.com/lerna/5.5.1
       rimraf: registry.npmmirror.com/rimraf/3.0.2
 
-  E:/workspace/vue2-schema-form-gsui:
-    specifiers:
-      '@commitlint/cli': ^8.3.5
-      '@commitlint/config-conventional': ^8.3.4
-      '@types/express-serve-static-core': 4.17.30
-      '@vue/compiler-sfc': ^3.0.0
-      commitizen: ^4.1.2
-      conventional-changelog-cli: ^2.0.34
-      cz-conventional-changelog: ^3.2.0
-      husky: ^4.2.5
-      lerna: ^5.5.1
-      rimraf: ^3.0.2
-    devDependencies:
-      '@commitlint/cli': registry.npmmirror.com/@commitlint/cli/8.3.6
-      '@commitlint/config-conventional': registry.npmmirror.com/@commitlint/config-conventional/8.3.6
-      '@types/express-serve-static-core': registry.npmmirror.com/@types/express-serve-static-core/4.17.30
-      '@vue/compiler-sfc': registry.npmmirror.com/@vue/compiler-sfc/3.2.39
-      commitizen: registry.npmmirror.com/commitizen/4.2.5
-      conventional-changelog-cli: registry.npmmirror.com/conventional-changelog-cli/2.2.2
-      cz-conventional-changelog: registry.npmmirror.com/cz-conventional-changelog/3.3.0
-      husky: registry.npmmirror.com/husky/4.3.8
-      lerna: registry.npmmirror.com/lerna/5.5.1
-      rimraf: registry.npmmirror.com/rimraf/3.0.2
-
   packages/demo:
     specifiers:
       '@babel/core': ^7.18.13
@@ -122,25 +98,40 @@ importers:
   packages/docs:
     specifiers:
       '@lljj/vue-json-schema-form': 1.14.0
-      '@vuepress/plugin-medium-zoom': ^1.5.2
-      '@vuepress/plugin-pwa': ^1.5.2
-      element-ui: ^2.13.2
+      '@vuepress/plugin-medium-zoom': ^1.9.7
+      '@vuepress/plugin-pwa': ^1.9.7
+      element-ui: ^2.15.10
       v-distpicker: ^1.2.7
-      vuepress: ^1.5.4
+      vue: '2'
+      vuepress: ^1.9.7
     dependencies:
       '@lljj/vue-json-schema-form': registry.npmmirror.com/@lljj/vue-json-schema-form/1.14.0
-      element-ui: registry.npmmirror.com/element-ui/2.15.10
+      element-ui: registry.npmmirror.com/element-ui/2.15.10_vue@2.7.10
       v-distpicker: registry.npmmirror.com/v-distpicker/1.3.2
     devDependencies:
       '@vuepress/plugin-medium-zoom': registry.npmmirror.com/@vuepress/plugin-medium-zoom/1.9.7
       '@vuepress/plugin-pwa': registry.npmmirror.com/@vuepress/plugin-pwa/1.9.7
+      vue: registry.npmmirror.com/vue/2.7.10
       vuepress: registry.npmmirror.com/vuepress/1.9.7
 
   packages/lib/utils:
     specifiers:
       ajv: ^6.10.2
+      cssnano: ^5.1.13
+      postcss: ^8.4.16
+      postcss-import: ^15.0.0
+      postcss-mixins: ^9.0.4
+      postcss-nested: ^5.0.6
+      postcss-preset-env: ^7.8.2
     dependencies:
       ajv: registry.npmmirror.com/ajv/6.12.6
+    devDependencies:
+      cssnano: registry.npmmirror.com/cssnano/5.1.13_postcss@8.4.16
+      postcss: registry.npmmirror.com/postcss/8.4.16
+      postcss-import: registry.npmmirror.com/postcss-import/15.0.0_postcss@8.4.16
+      postcss-mixins: registry.npmmirror.com/postcss-mixins/9.0.4_postcss@8.4.16
+      postcss-nested: registry.npmmirror.com/postcss-nested/5.0.6_postcss@8.4.16
+      postcss-preset-env: registry.npmmirror.com/postcss-preset-env/7.8.2_postcss@8.4.16
 
   packages/lib/vue2/vue2-core:
     specifiers:
@@ -9483,21 +9474,6 @@ packages:
     version: 1.4.249
     dev: true
 
-  registry.npmmirror.com/element-ui/2.15.10:
-    resolution: {integrity: sha512-jmD++mU2wKXbisvx4fxOl2mHaU+HWHTAq/3Wf8x9Bwyu4GdDZPLABb+CGi3DWN6fPqdgRcd74aX39DO+YHObLw==, registry: http://registry.npm.gridsum.com/, tarball: https://registry.npmmirror.com/element-ui/-/element-ui-2.15.10.tgz}
-    name: element-ui
-    version: 2.15.10
-    peerDependencies:
-      vue: ^2.5.17
-    dependencies:
-      async-validator: registry.npmmirror.com/async-validator/1.8.5
-      babel-helper-vue-jsx-merge-props: registry.npmmirror.com/babel-helper-vue-jsx-merge-props/2.0.3
-      deepmerge: registry.npmmirror.com/deepmerge/1.5.2
-      normalize-wheel: registry.npmmirror.com/normalize-wheel/1.0.1
-      resize-observer-polyfill: registry.npmmirror.com/resize-observer-polyfill/1.5.1
-      throttle-debounce: registry.npmmirror.com/throttle-debounce/1.1.0
-    dev: false
-
   registry.npmmirror.com/element-ui/2.15.10_vue@2.7.10:
     resolution: {integrity: sha512-jmD++mU2wKXbisvx4fxOl2mHaU+HWHTAq/3Wf8x9Bwyu4GdDZPLABb+CGi3DWN6fPqdgRcd74aX39DO+YHObLw==, registry: http://registry.npm.gridsum.com/, tarball: https://registry.npmmirror.com/element-ui/-/element-ui-2.15.10.tgz}
     id: registry.npmmirror.com/element-ui/2.15.10
@@ -9566,6 +9542,7 @@ packages:
     resolution: {integrity: sha512-ETBauow1T35Y/WZMkio9jiM0Z5xjHHmJ4XmjZOq1l/dXz3lr2sRn87nJy20RupqSh1F2m3HHPSp8ShIPQJrJ3A==, registry: http://registry.npm.gridsum.com/, tarball: https://registry.npmmirror.com/encoding/-/encoding-0.1.13.tgz}
     name: encoding
     version: 0.1.13
+    requiresBuild: true
     dependencies:
       iconv-lite: registry.npmmirror.com/iconv-lite/0.6.3
     dev: true

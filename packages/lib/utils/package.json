@@ -24,5 +24,13 @@
         "last 2 versions",
         "not ie <= 8"
     ],
+    "devDependencies": {
+      "cssnano": "^5.1.13",
+      "postcss": "^8.4.16",
+      "postcss-import": "^15.0.0",
+      "postcss-mixins": "^9.0.4",
+      "postcss-nested": "^5.0.6",
+      "postcss-preset-env": "^7.8.2"
+    },
     "gitHead": "92795075169c879e1c1fabfe26f1d3c10b861060"
 }
