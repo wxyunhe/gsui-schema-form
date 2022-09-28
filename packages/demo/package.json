@@ -29,7 +29,6 @@
     "@babel/plugin-transform-runtime": "^7.18.10",
     "@babel/preset-env": "^7.18.10",
     "@babel/runtime": "^7.18.9",
-    "@lljj/babel-preset-app": "^0.0.1",
     "babel-loader": "^8.2.5",
     "copy-webpack-plugin": "^11.0.0",
     "css-loader": "^6.7.1",

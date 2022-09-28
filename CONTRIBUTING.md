@@ -26,15 +26,3 @@ docker run --name vue-schema-form-html -p 41320:80 -d -v /data1/vue-schema-form:
 ```
 
 这句话代表使用 docker 在外部端口 41320 启动一个 nginx 服务，同时将外部的 /data1/vue-schema-form 映射到 /usr/share/nginx/html
-
-
-## patches
-
-### @vue+babel-preset-app+5.0.8.patch
-
-在官方的preset中如果配置了useBuiltIns 不等于 usage ，plugin-transform-runtime 就无法配置 helpers 来提取公共的助手代码
-fork一个支持配置： regenerator、helpers，不配置会按照之前的逻辑处理。
-
-### @lljj+vjsf-utils+1.14.0.patch
-
-原来的代码里面缺少 postcss.config.js，此补丁补充构建条件
