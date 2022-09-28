@@ -1,9 +1,9 @@
 {
     "name": "@cps/vjsf-utils",
-    "version": "2.15.0",
+    "version": "2.15.1",
     "description": "vue json schema form 使用的基础utils工具类",
     "maintainers": [
-      "cps"
+        "cps"
     ],
     "publishConfig": {
         "access": "public"

@@ -1,11 +1,11 @@
 {
     "name": "@cps/vue2-form-core",
-    "version": "2.15.0",
+    "version": "2.15.1",
     "description": "基于 Vue 、JsonSchema快速构建一个带完整校验的form表单，vue2版本基础框架",
     "main": "src/index.js",
     "module": "src/index.js",
     "maintainers": [
-      "cps"
+        "cps"
     ],
     "keywords": [
         "vue",
