@@ -25,7 +25,7 @@
         "packages:list": "lerna ls -l",
         "packages:changed": "lerna changed",
         "packages:build": "lerna run --stream --sort build",
-        "publish1": "pnpm run lib:build && lerna publish",
+        "publish1": "pnpm run lib:build && lerna version && pnpm publish --filter @cps/vue2-schema-form-gsui...",
         "autoPublish": "lerna publish --conventional-commits --yes",
         "autoVersion": "lerna version --conventional-commits --yes"
     },
