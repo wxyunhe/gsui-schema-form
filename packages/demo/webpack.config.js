@@ -81,8 +81,8 @@ module.exports = {
     }),
     new CopyWebpackPlugin({
       patterns: [
-        { from: 'node_modules/@gs-ui/gs-ui/lib/umd/gs-ui.min.js', to: 'public/gs-ui' },
-        { from: 'node_modules/@gs-ui/gs-ui/lib/umd/gs-ui.min.css', to: 'public/gs-ui' },
+        { from: '../../node_modules/@gs-ui/gs-ui/lib/umd/gs-ui.min.js', to: 'public/gs-ui' },
+        { from: '../../node_modules/@gs-ui/gs-ui/lib/umd/gs-ui.min.css', to: 'public/gs-ui' },
       ]
     }),
     new VueLoaderPlugin(),

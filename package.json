@@ -8,24 +8,22 @@
       "cps"
     ],
     "workspaces": [
-        "packages/lib/**",
-        "packages/docs",
-        "packages/demo/**"
+        "packages/**"
     ],
     "scripts": {
-        "docs:dev": "pnpm --filter docs dev",
-        "docs:build": "pnpm --filter docs build",
-        "lib:watch": "pnpm --filter @cps/vue2-schema-form-gsui watch",
-        "lib:build": "pnpm --filter @cps/vue2-schema-form-gsui build",
-        "demo:dev": "pnpm --filter demo serve",
-        "demo:build": "pnpm --filter demo build",
+        "docs:dev": "yarn workspace docs dev",
+        "docs:build": "yarn workspace docs build",
+        "lib:watch": "yarn workspace @cps/vue2-schema-form-gsui watch",
+        "lib:build": "yarn workspace @cps/vue2-schema-form-gsui build",
+        "demo:dev": "yarn workspace demo serve",
+        "demo:build": "yarn workspace demo build",
         "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 2",
         "clean": "lerna clean && rimraf node_modules",
         "packages:diff": "lerna diff",
         "packages:list": "lerna ls -l",
         "packages:changed": "lerna changed",
         "packages:build": "lerna run --stream --sort build",
-        "publish1": "pnpm run lib:build && lerna version && pnpm publish --filter @cps/vue2-schema-form-gsui...",
+        "publish1": "yarn run lib:build && lerna publish",
         "autoPublish": "lerna publish --conventional-commits --yes",
         "autoVersion": "lerna version --conventional-commits --yes"
     },

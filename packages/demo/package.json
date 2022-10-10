@@ -14,7 +14,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@cps/vue2-schema-form-gsui": "workspace:*",
+    "@cps/vue2-schema-form-gsui": "*",
     "@gs-ui/gs-ui": "^2.11.11",
     "@lljj/polyfill": "^0.1.0",
     "@lljj/vue-json-schema-form": "1.14.0",

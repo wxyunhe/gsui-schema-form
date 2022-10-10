@@ -11,7 +11,7 @@ import { deepEquals } from '@cps/vjsf-utils/utils';
 
 // 基础公共样式
 import '@cps/vjsf-utils/style/baseForm.css';
-debugger
+
 import vueProps from './props';
 
 // 默认表单底部

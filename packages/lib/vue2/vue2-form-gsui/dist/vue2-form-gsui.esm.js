@@ -11485,7 +11485,6 @@ var SchemaField = {
 /**
  * Created by Liu.Jun on 2020/4/16 17:32.
  */
-debugger;
 function createForm(globalOptions = {}) {
   // global components
   if (globalOptions.WIDGET_MAP.widgetComponents) {
