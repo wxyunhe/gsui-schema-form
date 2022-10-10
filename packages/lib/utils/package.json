@@ -1,39 +1,39 @@
 {
-    "name": "@cps/vjsf-utils",
-    "version": "2.15.3",
-    "description": "vue json schema form 使用的基础utils工具类",
-    "maintainers": [
-        "cps"
-    ],
-    "publishConfig": {
-        "access": "public"
-    },
-    "keywords": [
-        "@lljj/vjsf-utils",
-        "vue",
-        "vuejs",
-        "form",
-        "jsonSchema"
-    ],
-    "dependencies": {
-        "ajv": "^6.10.2"
-    },
-    "repository": "https://github.com/lljj-x/vue-json-schema-form",
-    "homepage": "https://github.com/lljj-x/vue-json-schema-form",
-    "license": "Apache-2.0",
-    "author": "Liu.Jun",
-    "browserslist": [
-        "> 1%",
-        "last 2 versions",
-        "not ie <= 8"
-    ],
-    "devDependencies": {
-        "cssnano": "^5.1.13",
-        "postcss": "^8.4.16",
-        "postcss-import": "^15.0.0",
-        "postcss-mixins": "^9.0.4",
-        "postcss-nested": "^5.0.6",
-        "postcss-preset-env": "^7.8.2"
-    },
-    "gitHead": "d73c70a4aefec4dc6d876662a2ad5ba3c9f8e587"
+  "name": "@cps/vjsf-utils",
+  "version": "2.16.0",
+  "description": "vue json schema form 使用的基础utils工具类",
+  "maintainers": [
+    "cps"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "@lljj/vjsf-utils",
+    "vue",
+    "vuejs",
+    "form",
+    "jsonSchema"
+  ],
+  "dependencies": {
+    "ajv": "^6.10.2"
+  },
+  "repository": "https://github.com/lljj-x/vue-json-schema-form",
+  "homepage": "https://github.com/lljj-x/vue-json-schema-form",
+  "license": "Apache-2.0",
+  "author": "Liu.Jun",
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ],
+  "devDependencies": {
+    "cssnano": "^5.1.13",
+    "postcss": "^8.4.16",
+    "postcss-import": "^15.0.0",
+    "postcss-mixins": "^9.0.4",
+    "postcss-nested": "^5.0.6",
+    "postcss-preset-env": "^7.8.2"
+  },
+  "gitHead": "d73c70a4aefec4dc6d876662a2ad5ba3c9f8e587"
 }

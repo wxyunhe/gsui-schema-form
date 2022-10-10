@@ -1,6 +1,6 @@
 {
   "name": "demo",
-  "version": "2.15.3",
+  "version": "2.16.0",
   "description": "",
   "private": true,
   "scripts": {
@@ -14,7 +14,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@cps/vue2-schema-form-gsui": "*",
+    "@cps/vue2-schema-form-gsui": "2.16.0",
     "@gs-ui/gs-ui": "^2.11.11",
     "@lljj/polyfill": "^0.1.0",
     "@lljj/vue-json-schema-form": "1.14.0",
