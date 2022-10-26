@@ -151,7 +151,7 @@
                             class="clearfix"
                         >
                             <span>
-                                生成表单Ui库：
+                                生成表单 UI 库：
                                 <el-select
                                     v-model="curVueForm"
                                     placeholder="ui"
@@ -223,7 +223,7 @@ export default {
     data() {
         return {
             typeItems,
-            curVueForm: this.$route.query.ui || 'VueElementForm',
+            curVueForm: this.$route.query.ui || 'VueGsUiForm',
             ...this.getDefaultSchemaMap(),
             formComponents: [{
                 name: 'ElementUi',

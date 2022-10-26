@@ -20,6 +20,7 @@ module.exports = {
   externals: {
     'vue': 'Vue',
     'vue-router': 'VueRouter',
+    '@gs-ui/gs-ui': 'gsui'
   },
   module: {
     rules: [
@@ -69,20 +70,19 @@ module.exports = {
     new HtmlWebpackTagsPlugin({
       links: [
         'https://cdn.jsdelivr.net/npm/element-ui@2.15.10/lib/theme-chalk/index.css',
-        'public/gs-ui/gs-ui.min.css',
+        'public/libs/gs-ui/gs-ui.min.css',
       ],
       scripts: [
         'https://cdn.jsdelivr.net/npm/vue@2.7.10/dist/vue.min.js',
         'https://cdn.jsdelivr.net/npm/vue-router@3.6.5/dist/vue-router.min.js',
         'https://cdn.jsdelivr.net/npm/element-ui@2.15.10/lib/index.js',
-        'public/gs-ui/gs-ui.min.js',
+        'public/libs/gs-ui/gs-ui.min.js',
       ],
       append: false
     }),
     new CopyWebpackPlugin({
       patterns: [
-        { from: '../../node_modules/@gs-ui/gs-ui/lib/umd/gs-ui.min.js', to: 'public/gs-ui' },
-        { from: '../../node_modules/@gs-ui/gs-ui/lib/umd/gs-ui.min.css', to: 'public/gs-ui' },
+        { from: './public/', to: 'public/' },
       ]
     }),
     new VueLoaderPlugin(),

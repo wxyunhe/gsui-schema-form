@@ -27,6 +27,11 @@
 <script>
 import loader from '@monaco-editor/loader';
 
+loader.config({
+  paths: { vs: "public/libs/monaco-editor/vs" },
+});
+loader.config({ "vs/nls": { availableLanguages: { "*": "zh-cn" } } });
+
 export default {
     name: 'CodeEditor',
     props: {
@@ -57,7 +62,6 @@ export default {
         theme: {
             type: String,
             default: 'vs-dark',
-            // default: 'vs-dark'
         },
         options: {
             type: Object,
