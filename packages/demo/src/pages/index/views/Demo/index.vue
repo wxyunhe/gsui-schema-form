@@ -196,7 +196,7 @@
 
 <script>
 import EditorHeader from 'demo-common/components/EditorHeader.vue';
-import CodeEditor from 'demo-common/components/CodeEditorV2';
+import CodeEditor from 'demo-common/components/CodeEditorV3.vue';
 import schemaTypes from 'demo-common/schemaTypes';
 
 const VueElementForm = () => import('@lljj/vue-json-schema-form');
