@@ -2,7 +2,7 @@
  * Created by Liu.Jun on 2020/12/9 16:59.
  */
 
-import { formUtils, getDefaultFormState } from '@lljj/vue-json-schema-form';
+import { formUtils, getDefaultFormState } from '@cps/vue2-schema-form-gsui'
 import { generateEditorItem, deFormatFormLabelWidth } from './editorData';
 import { isObject } from './utils';
 

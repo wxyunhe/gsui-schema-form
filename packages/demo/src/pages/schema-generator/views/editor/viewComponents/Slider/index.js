@@ -7,7 +7,7 @@ import genSchema from '../genSchema.js';
 const viewSchema = {
     title: '数字（slider）',
     type: 'number',
-    'ui:widget': 'ElSlider'
+    'ui:widget': 'GsSlider'
 };
 
 export default {

@@ -1,26 +1,26 @@
 <template>
     <div v-loading="loading">
         <EditorHeader default-active="4">
-            <el-button @click="handleImportSchema">导入Schema</el-button>
-            <el-button
+            <gs-button @click="handleImportSchema">导入Schema</gs-button>
+            <gs-button
                 plain
                 @click="handleToDemo"
             >
                 Playground中验证
-            </el-button>
-            <el-button
+            </gs-button>
+            <gs-button
                 type="primary"
                 plain
                 @click="handlePreview"
             >
                 预览展示
-            </el-button>
-            <el-button
+            </gs-button>
+            <gs-button
                 type="primary"
                 @click="handleExportSchema"
             >
                 导出Schema
-            </el-button>
+            </gs-button>
         </EditorHeader>
 
         <div :class="[$style.container]">
@@ -48,7 +48,7 @@
                 </div>
 
                 <div :class="[$style.contentBox]">
-                    <el-form
+                    <gs-form
                         style="height: 100%"
                         :model="rootFormData"
                         v-bind="formProps"
@@ -67,23 +67,23 @@
                             :form-data="rootFormData"
                             :form-props="formProps"
                         >
-                            <el-form-item
+                            <gs-form-item
                                 v-if="componentList.length > 0 && formFooter.show"
                                 :style="{
                                     display: formProps.inline && formProps.inlineFooter ? 'inline-block' : 'block'
                                 }"
                                 class="formFooter_item w100 formFooter_item-editor"
                             >
-                                <el-button @click="$emit('onCancel')">{{ formFooter.cancelBtn }}</el-button>
-                                <el-button
+                                <gs-button @click="$emit('onCancel')">{{ formFooter.cancelBtn }}</gs-button>
+                                <gs-button
                                     type="primary"
                                     @click="$emit('onSubmit')"
                                 >
                                     {{ formFooter.okBtn }}
-                                </el-button>
-                            </el-form-item>
+                                </gs-button>
+                            </gs-form-item>
                         </NestedEditor>
-                    </el-form>
+                    </gs-form>
                     <div
                         v-if="componentList.length === 0"
                         :class="$style.tipBox"
@@ -92,8 +92,8 @@
                     </div>
                 </div>
                 <div :class="$style.rightForm">
-                    <el-tabs v-model="activeName">
-                        <el-tab-pane
+                    <gs-tabs v-model="activeName">
+                        <gs-tab-pane
                             v-if="curEditorItem"
                             label="组件配置"
                             name="compConfig"
@@ -111,8 +111,8 @@
                                 }"
                             >
                             </VueJsonFrom>
-                        </el-tab-pane>
-                        <el-tab-pane
+                        </gs-tab-pane>
+                        <gs-tab-pane
                             label="表单配置"
                             name="formConfig"
                         >
@@ -129,8 +129,8 @@
                                 }"
                             >
                             </VueJsonFrom>
-                        </el-tab-pane>
-                    </el-tabs>
+                        </gs-tab-pane>
+                    </gs-tabs>
                 </div>
             </div>
         </div>
@@ -138,7 +138,7 @@
 </template>
 
 <script>
-import VueJsonFrom from '@lljj/vue-json-schema-form';
+import VueJsonFrom from '@cps/vue2-schema-form-gsui';
 import componentWithDialog from 'demo-common/components/component-with-dialog';
 import { openNewPage } from 'demo-common/utils/url.js';
 

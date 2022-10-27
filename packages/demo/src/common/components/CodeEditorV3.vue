@@ -73,16 +73,21 @@ export default defineComponent({
       const width = this.width;
       const height = this.height;
 
-      const fixedWidth = width.toString().includes("%") ? width : `${width}px`;
-      const fixedHeight = height.toString().includes("%")
-        ? height
-        : `${height}px`;
+      const fixedWidth = toFixed(width);
+      const fixedHeight = toFixed(height);
 
       return {
         width: fixedWidth,
         height: fixedHeight,
         "text-align": "left",
       };
+
+      function toFixed(value) {
+        if (Number(value)) {
+          return `${value}px`;
+        }
+        return value;
+      }
     },
   },
   mounted() {

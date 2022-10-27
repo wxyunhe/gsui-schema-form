@@ -62,7 +62,7 @@
 </template>
 
 <script>
-import { SchemaField, globalOptions } from '@lljj/vue-json-schema-form';
+import { SchemaField, globalOptions } from '@cps/vue2-schema-form-gsui';
 import emitter from '../../../mixins/emitter.js';
 import NestedEditor from './NestedEditor';
 import { editorItem2SchemaFieldProps } from '../common/editorData';

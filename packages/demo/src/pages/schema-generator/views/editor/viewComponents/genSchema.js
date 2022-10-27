@@ -47,7 +47,7 @@ function genBaseVal(type = 'string', isMultiSelect = false) {
                             type: 'boolean',
                             title: '不重复',
                             description: '多选框强制默认为 true，且配置无效',
-                            'ui:widget': 'el-switch',
+                            'ui:widget': 'gs-switch',
                             default: false
                         }
                     } : {}
@@ -66,7 +66,7 @@ function genBaseVal(type = 'string', isMultiSelect = false) {
                         labelWidth: {
                             title: '标签宽度',
                             type: 'number',
-                            'ui:widget': 'ElSlider',
+                            'ui:widget': 'GsSlider',
                             'ui:options': {
                                 formatTooltip(val) {
                                     return formatFormLabelWidth(val);
@@ -88,13 +88,13 @@ function genBaseVal(type = 'string', isMultiSelect = false) {
                             title: '显示标题',
                             type: 'boolean',
                             default: true,
-                            'ui:widget': 'el-switch'
+                            'ui:widget': 'gs-switch'
                         },
                         showDescription: {
                             title: '显示描述',
                             type: 'boolean',
                             default: true,
-                            'ui:widget': 'el-switch'
+                            'ui:widget': 'gs-switch'
                         }
                     },
                 }
